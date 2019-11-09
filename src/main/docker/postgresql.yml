@@ -1,0 +1,11 @@
+version: '2'
+services:
+  lunchoracle-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/LunchOracle/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=LunchOracle
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
